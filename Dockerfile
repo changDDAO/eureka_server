@@ -6,4 +6,4 @@ COPY ${JAR_FILE} eureka_server.jar
 
 EXPOSE 8761
 
-ENTRYPOINT ["java", "-jar", "/eureka_server.jar"]
+ENTRYPOINT ["java","-Dspring.profiles.active=prod","-jar", "/eureka_server.jar"]

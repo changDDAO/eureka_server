@@ -4,8 +4,11 @@ server:
 spring:
   application:
     name: eureka-server
+  profiles:
+    active: local
 
 eureka:
   client:
     register-with-eureka: false
     fetch-registry: false
+
