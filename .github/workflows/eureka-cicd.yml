@@ -56,7 +56,7 @@ jobs:
           cat docker-compose.yml || echo "docker-compose.yml 없음"
       
       - name: Pull latest image from Docker Hub
-        run: docker compose -f ./docker-compose.yml pull gateway
+        run: docker compose -f ./docker-compose.yml pull eureka-server
   
       - name: Restart Gateway container
-        run: docker compose -f ./docker-compose.yml up -d gateway
+        run: docker compose -f ./docker-compose.yml up -d eureka-server
