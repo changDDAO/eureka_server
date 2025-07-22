@@ -58,5 +58,5 @@ jobs:
       - name: Pull latest image from Docker Hub
         run: docker compose -f ./docker-compose.yml pull eureka-server
   
-      - name: Restart Gateway container
+      - name: Restart eureka-server container
         run: docker compose -f ./docker-compose.yml up -d eureka-server
